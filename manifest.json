@@ -1,16 +1,16 @@
 {
-  "manifest_version": 2,
-
-  "name": "JavaScript-Ad Finder",
-  "description": "This extension finds JavaScript Advertisements from the webpage you are browsing",
-  "version": "1.0",
-
-  "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
-  },
+  "name": "Ad-Finder",
+  "description": "Finds Advertisement related JavaScript",
+  "version": "2.0",
   "permissions": [
-    "activeTab",
-    "https://ajax.googleapis.com/"
-  ]
+    "activeTab"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_title": "Ad-Finder"
+  },
+  "manifest_version": 2
 }
