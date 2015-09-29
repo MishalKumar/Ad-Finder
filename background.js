@@ -7,6 +7,6 @@ chrome.browserAction.onClicked.addListener(function(tab) {
   // No tabs or host permissions needed!
   console.log('Turning ' + tab.url + ' red!');
   chrome.tabs.executeScript({
-    code: 'var x= document.getElementsByTagName("script"); for(var i=0;i<x.length;i++){alert(x[i].innerHTML);}'
+    code: 'var x= document.getElementsByTagName("script"); for(var i=0;i<x.length;i++){if(x[i].innerHTML!="")alert(x[i].innerHTML); else alert(x[i].src);}'
   });
 });
