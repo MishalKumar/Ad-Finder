@@ -12,5 +12,11 @@
   "browser_action": {
     "default_title": "Ad-Finder"
   },
-  "manifest_version": 2
+  "manifest_version": 2,
+  
+  "browser_action": {
+    "default_icon": "adblock.png",
+    "default_popup": "popup.html",
+    "default_title": "Click here!"
+  }
 }
